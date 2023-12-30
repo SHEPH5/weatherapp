@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Weather Forecast</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="city1" placeholder="City 1">
+        <input type="text" name="city2" placeholder="City 2">
+        <button type="submit"> Compare Weather </button>
+    </form>
+
+    <div class="comparison-container">
+        {% if weather_data1 %}
+        <div class="city-container">
+
+        </div>
+        {% endif %}
+        {% if weather_data2 %}
+        <div class="city-container">
+
+        </div>
+        
+            
+    </div>
+    
+</body>
+</html>
